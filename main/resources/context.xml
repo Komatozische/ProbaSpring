@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <!--<bean id="unit1" class="springDI.Unit1">
+        <constructor-arg ref="paws"/>
+        <constructor-arg ref="claws"/>
+    </bean>-->
+    <bean id="unit1" class="springDI.Unit1">
+        <constructor-arg ref="wing"/>
+        <constructor-arg ref="muzzle"/>
+    </bean>
+
+
+    <bean id="paws" class="extremity.Paws"/>
+    <bean id="wing" class="extremity.Wing"/>
+
+    <bean id="claws" class="weapon.Claws"/>
+    <bean id="muzzle" class="weapon.Muzzle"/>
+</beans>
+
+
